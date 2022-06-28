@@ -256,7 +256,7 @@ footer {
 
 
 
-@media screen and ( max-width: 600px) {
+@media screen and ( max-device-width: 650px),(max-width: 650px) {
     h1 {
         font-size: 40px;
     }
@@ -281,11 +281,13 @@ footer {
         height: 0;
     }
     .home-text {
-        margin-top: 52px;
+        margin: 52px auto;
+        text-align: center;
         font-size: 16px;
     }
     .home-text-img {
         margin-top: 25px;
+        padding-left: 30%;
     }
     .home-text h2 {
         font-size: 32px;
@@ -314,10 +316,13 @@ footer {
     }
     .projects-text {
         margin-top: 20px;
+        text-align: center;
+    }
+    .toggles {
+        text-align: center;
     }
     .projects-text p {
         font-size: 20px;
-        margin: 0;
     }
     .toggles button {
         font-size: 16px;
@@ -358,12 +363,12 @@ footer {
         background-image: url("../img/about/myphoto-mini.png");
         width: 238px;
         height: 309px;
-        margin: 20px 0;
-
+        margin: 20px auto;
     }
     .about-text {
         width: 100%;
         margin-bottom: 40px;
+        text-align: center;
     }
     .about-text span {
         font-size: 24px;
@@ -376,6 +381,7 @@ footer {
     }
     .about-text table {
         font-size: 16px;
+        margin: 20px auto;
     }
     .contact-img {
         background-image: none;
@@ -388,6 +394,7 @@ footer {
     }
     .content-text {
         width: 100%;
+        text-align: center;
     }
     .content-text p {
         font-size: 20px;

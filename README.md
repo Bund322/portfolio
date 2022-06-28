@@ -22,7 +22,7 @@
 - Использован шрифт OpenSans с Google Fonts.
 - Сайт адаптирован для мобильных устройств.
 <p align="center">
-<img src="./readme_assets/p2.PNG" width="100%"></p>
+<img src="./readme_assets/p2.PNG" width="40%"></p>
 
 ## Развитие
 

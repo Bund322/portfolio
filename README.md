@@ -6,7 +6,7 @@
 
 
 <p align="center">
-<img src="./readme_assets/p1.png" width="100%"></p>
+<img src="./readme_assets/p1.PNG" width="100%"></p>
 Портфолио, реализованное с нуля на html + css + JS. Содержит 4 раздела информации (Приветствие, мои проекты, обо мне и контакты соответственно).
 Я сам изучал веб-разработку без каких-либо курсов или тренингов, поэтому не ожидайте слишком многого от исходного кода xD.
 
@@ -14,7 +14,7 @@
 
 - Реализованы 2 темы интерфейса (светлая и темная) с помощью функций JavaScript.
 <p align="center">
-<img src="./readme_assets/p3.png" width="100%"></p>
+<img src="./readme_assets/p3.PNG" width="100%"></p>
 - Стиль страницы сверстан с помощью CSS, CSS flexbox, CSS Grid.
 - Сортировка проектов реализована через библиотеку JQuery.
 <p align="center">
@@ -22,7 +22,7 @@
 - Использован шрифт OpenSans с Google Fonts.
 - Сайт адаптирован для мобильных устройств.
 <p align="center">
-<img src="./readme_assets/p2.png" width="100%"></p>
+<img src="./readme_assets/p2.PNG" width="100%"></p>
 
 ## Развитие
 

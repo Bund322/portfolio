@@ -1,0 +1,419 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+li {
+    list-style: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: #EFEFEF;
+    padding: 28px 0;
+}
+.header-container {
+    width: 83.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container a {
+    padding: 5px 2px;
+    margin-right: 61px;
+}
+
+ul {
+    display: flex;
+}
+nav {
+    margin-top: 27px;
+}
+.body-img {
+    background-size: cover;
+    background-position: center;
+    height: 34px;
+    width: 34px;
+}
+.body-img__big {
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    width: 320px;
+}
+.theme-button {
+    width: 47px;
+    height: 47px;
+    margin-top: -10px;
+}
+
+.container {
+    margin-top: 79px;
+    display: flex;
+    background: #fff;
+}
+.home-content {
+    width: 83.5%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.home-img {
+    background-image: url("../img/home/home-img.png");
+    width: 560px;
+    height: 733px;
+    margin-right: 75px;
+    margin-top: 100px;
+}
+.home-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 522px;  
+}
+.home-text h2 {
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+    margin-left: -2px;  
+}
+.home-text img {
+    height: 34px;
+}
+.home-text-img {
+    margin-top: 48px;
+}
+.home-text-img div {
+    float: left;
+    margin-right: 60px;
+}
+.home-p-item {
+    font-size: 20px; 
+    margin: 0;
+}
+.projects-content {
+    width: 83.5%;
+    margin: 0 auto;
+}
+.projects-text {
+    margin-top: 60px;
+}
+h1 {
+    font-size: 85px;
+    margin: 0;
+}
+.projects-text p {
+    font-size: 31px;
+    margin: 0;
+}
+.toggles button {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0;
+    margin-right: 20px;
+}
+.toggles button:hover {
+    color: #6c6c6c;
+}
+.posts {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px auto;
+    column-gap: 21%;
+}
+.posts img {
+    width: 634px;
+}
+.posts h3 {
+    font-size: 24px;
+    margin: 0 5px;
+}
+.posts p {
+    margin: 0 5px;
+    font-size: 15px;
+}
+.post-button2 {
+    justify-content: space-between;
+    padding: 0;
+}
+.post-button2 li {
+    border: 2px solid black;
+    width: 303px;
+    text-align: center;
+}
+.post-button2 a {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.about-content, .contact-content, .footer-content {
+    width: 83.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.about-text {
+    width: 47%;
+}
+.about-text p {
+    font-size: 24px;
+    margin: 0;
+}
+.about-text span {
+    font-size: 31px;
+}
+.about-img {
+    background-image: url("../img/about/myphoto.png");
+    width: 626px;
+    height: 680px;
+    margin-top: 190px;
+    margin-bottom: 200px;
+}
+.about-text h5 {
+    font-size: 31px;
+    margin: 0;
+    margin-top: 56px;
+}
+.about-text table {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 24px;
+}
+.contact-content {
+    margin-bottom: 50px;
+}
+.content-text {
+    width: 50%;
+}
+.content-text p {
+    font-size: 31px;
+    margin: 0;
+}
+.content-input {
+    margin-top: 54px;
+}
+.content-input p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.input-text input {
+    width: 99.3%;
+    height: 30px;
+    border: 1px solid black;
+}
+.input-text textarea {
+    border: 1px solid black;
+    width: 99.3%;
+    height: 100px;
+}
+.input-button input{
+    width: 303px;
+    height: 52px;
+    border: 1px solid black;
+    cursor: pointer;
+    float: right;
+}
+.contact-img {
+    width: 465px;
+    height: 781px;
+    margin-top: 80px;
+}
+footer {
+    background: #1D1D1E;
+    margin-top: 60px;
+}
+.footer-content {
+    padding: 35px 0;
+}
+.footer-content p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: lighter;
+}
+.footer-content img {
+    margin: 0 35px;
+}
+.footer-content div {
+    float: left;
+    margin-right: 60px;
+}
+
+
+
+
+
+
+
+@media screen and ( max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+    .container {
+        margin-top: 32px;
+    }
+    .header-container {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .logo {
+        width: 100%;
+        max-width: 400px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .home-img {
+        background-image: none;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+    .home-text {
+        margin-top: 52px;
+        font-size: 16px;
+    }
+    .home-text-img {
+        margin-top: 25px;
+    }
+    .home-text h2 {
+        font-size: 32px;
+    }
+    .home-p-item {
+        font-size: 14px; 
+    }
+    .home-text-img div {
+        margin-right: 20px;
+    }
+
+    .main-menu {
+        display: block;
+    }
+    .main-menu li {
+        width: 100%;
+        display: block;
+        margin-left: 13px;
+    }
+    .main-menu a {
+        display: block;
+        padding: 5px;
+    }
+    .theme-button {
+        margin: 5px auto;
+    }
+    .projects-text {
+        margin-top: 20px;
+    }
+    .projects-text p {
+        font-size: 20px;
+        margin: 0;
+    }
+    .toggles button {
+        font-size: 16px;
+        margin: 20px 0;
+        margin-right: 14px;
+    }
+    .about-content, .contact-content, .footer-content {
+        margin-top: 20px;
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px auto;
+    }
+    .posts img {
+        width: 100%;
+    }
+    .posts h3 {
+        font-size: 20px;
+    }
+    .posts p {
+        font-size: 14px;
+    }
+    .post-button2 li {
+        width: 48%;
+    }
+    .post-button2 a {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+    .about-img {
+        background-image: none;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    .about-img__mini {
+        background-image: url("../img/about/myphoto-mini.png");
+        width: 238px;
+        height: 309px;
+        margin: 20px 0;
+
+    }
+    .about-text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .about-text span {
+        font-size: 24px;
+    }
+    .about-text p {
+        font-size: 16px;
+    }
+    .about-text h5 {
+        font-size: 24px;
+    }
+    .about-text table {
+        font-size: 16px;
+    }
+    .contact-img {
+        background-image: none;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    .content-input {
+        margin-top: 34px;
+    }
+    .content-text {
+        width: 100%;
+    }
+    .content-text p {
+        font-size: 20px;
+    }
+    .content-input p {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    .input-text input, .input-text textarea {
+        width: 98.5%;
+    }
+
+    .input-button input {
+        width: 150px;
+        height: 36px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+    .footer-content p {
+        font-size: 16px;
+        width: 60%;
+    }
+    .footer-content div {
+        float: left;
+        margin-right: 10px;
+    }
+    
+}

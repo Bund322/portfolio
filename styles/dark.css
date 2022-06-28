@@ -1,0 +1,87 @@
+body {
+    background: #E5E5E5;
+
+}
+header {
+    background: #1D1D1E;
+}
+.header-container a {
+    color: white;
+}
+.header-container a:hover {
+    color: #ccc;
+}
+.theme-button {
+    background-image: url('../img/header/change-theme-dark.png');
+}
+.logo {
+    background-image: url("../img/header/logo-dark.png");
+}
+.email-logo {
+    background-image: url("../img/icons/email-logo-dark.png");
+}
+.github-logo {
+    background-image: url("../img/icons/github-logo-dark.png");
+}
+.vk-logo {
+    background-image: url("../img/icons/vk-logo-dark.png");
+}
+.email-logo__reverse {
+    background-image: url("../img/icons/email-logo.png");
+}
+.github-logo__reverse {
+    background-image: url("../img/icons/github-logo.png");
+}
+.vk-logo__reverse {
+    background-image: url("../img/icons/vk-logo.png");
+}
+
+
+.container {
+    background: #1D1D1E;
+    color:#EFEFEF;
+}
+
+.toggles button {
+    background: #1D1D1E;
+    color: white;
+}
+.toggles button:hover {
+    color: #ccc;
+}
+.post-button2 li {
+    border: 2px solid white;
+}
+.post-button2 a {
+    color: white;
+}
+.contact-img {
+    background-image: url("../img/contact/contact-logo-dark.png");
+}
+.input-text input {
+    border: 1px solid white;
+    background-color: #1D1D1E;
+}
+.input-text textarea {
+    border: 1px solid white;
+    background-color: #1D1D1E;
+}
+.input-button input{
+    border: 1px solid white;
+    background-color: #1D1D1E;
+    color: white;
+}
+footer {
+    background: white;
+}
+.footer-content p {
+    color: #1D1D1E;
+}
+
+
+
+@media screen and ( max-width: 600px) {
+    .contact-img {
+        background-image: none;
+    }
+}

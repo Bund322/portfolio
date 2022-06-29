@@ -74,8 +74,7 @@ footer {
     background: #1D1D1E;
 }
 
-
-@media screen and ( max-width: 600px) {
+@media screen and ( max-width: 1260px) {
     .contact-img {
         background-image: none;
     }

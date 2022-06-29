@@ -80,7 +80,7 @@ footer {
 
 
 
-@media screen and ( max-width: 600px) {
+@media screen and ( max-width: 1260px) {
     .contact-img {
         background-image: none;
     }

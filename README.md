@@ -1,6 +1,6 @@
-<h1 align="center">Portfolio</h1>
+<h1 align="center">Портфолио</h1>
 
-<h2 align="center"><a  href="https://bund322.github.io/portfolio/" target = "_blank">Live Demo</a></h2>
+<h2 align="center"><a  href="https://bund322.github.io/portfolio/" target = "_blank">Посмотреть ДЕМО</a></h2>
 
 ## Описание
 
@@ -35,7 +35,6 @@
 
 <p align="center">
 <img src="./readme_assets/p2.PNG" width="40%"></p>
-
 
 ## Развитие
 

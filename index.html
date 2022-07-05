@@ -1,148 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>Portfolio</title>
-    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
-    <link rel='stylesheet' type='text/css' href='./styles/light.css' id = "theme-link">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Когут</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="./img/icons/favicon.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./img/icons/favicon96.png">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class = "wrapper">
-        
-        <header>
+    <div class="page">
+        <header class="header">
             <div class="header-container">
-                <div class = "logo body-img__big">
+                <div class="logo">
+                    <img src="./img/header/logo.svg" alt="">
                 </div>
-                <nav role = "navigation">
-                    <ul class = "main-menu">
-                        <li><a href = "#projects">ПРОЕКТЫ</a></li>
-                        <li><a href = "#about">ОБО МНЕ</a></li>
-                        <li><a href = "#contact">КОНТАКТЫ</a></li>
-                        <li><a href = "#"><div class = "theme-button body-img" id = "theme-button"></div></a></li>
-                    </ul>
-                    
-
-                </nav>
-                
+                <div class="navigation">
+                    <nav class="nav">
+                        <a href="#projects">ПРОЕКТЫ</a>
+                        <a href="#about">ОБО МНЕ</a>
+                        <a href="#contact">КОНТАКТЫ</a>
+                    </nav>
+                    <div class="change-theme">
+                        <img src="./img/header/theme-laght.svg" alt="">
+                    </div>
+                </div>
             </div>
         </header>
-        <main>
-            <section class = "home container">
-                <div class = "home-content">
-                    <div class = "home-text">
-                        <p style = "margin:0;"><span>Привет, я Александр Когут. </span><br><span style = "font-weight: 200;">Добро пожаловать в мое портфолио.</span></p>
-                        <h2>Frontend Developer</h2>
-                        <p class = "home-p-item">Увлечен технологиями и их возможностями.</p>
-                        <div class = "home-text-img">
-                            <a href = "mailto:gus0aleksandr@yandex.ru" target="_blank"><div class = "body-img email-logo"></div></a>
-                            <a href = "https://github.com/Bund322" target="_blank"><div class = "body-img github-logo"></div></a>
-                            <a href = "https://vk.com/id699032047" target="_blank"><div class = "body-img vk-logo"></div></a>
-                        </div>
+        <main class="main">
+            <section class="home">
+                <div class="home__left">
+                    <div class="home__text">
+                        <p><b>Привет, я Александр Когут.</p></b>
+                            <p>Добро пожаловать в мое портфолио.</p>
+                        <h1>Frontend Developer</h1>
+                        <p><b>Увлечен технологиями и их возможностями.</b></p>
                     </div>
-                    <div class = "home-img body-img__big">
+                    <div class="icons">
+                        <a href="#"><img src="./img/icons/mail-logo.svg" alt=""></a>
+                        <a href="#"><img src="./img/icons/github-logo.svg" alt=""></a>
+                        <a href="#"><img src="./img/icons/vk-logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="home__right">
+                    <img src="./img/home/home-img.png" alt="">
+                </div>
+            </section>
+            <section class="projects section" id = "projects">
+                <div class="section__header ">
+                    <h1>МОИ ПРОЕКТЫ</h1>
+                    <p>Коллекция моих последних работ.</p>
+                </div>
+                <div class="section__content projects__content">
+                    <div class="toggles">
+                        <button class = "button toggles__button" id = "show-all">показать все</button>
+                        <button class = "button toggles__button" id = "current-works">текущие</button>
+                        <button class = "button toggles__button" id = "complited-works">завершенные</button>
+                    </div>
+                    <div class="posts">
+                        <div class="post current-works">
+                            <div class="post__header">
+                                <img src="./img/projects/post1.PNG" alt="">
+                            </div>
+                            <div class="post__discription">
+                                <h2>Worku.</h2>
+                                <p>Отслеживайте всю свою работу в одном приложении.</p>
+                            </div>
+                            <div class="post__buttons">
+                                <a href = "https://bund322.github.io/worku_sass/" target="_blank"><b>Посмотрите!</b></a>
+                                <a href = "https://github.com/Bund322/worku_sass" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="post complited-works">
+                            <div class="post__header">
+                                <img src="./img/projects/post2.png" alt="">
+                            </div>
+                            <div class="post__discription">
+                                <h2>Mintify</h2>
+                                <p>NFT маркет.</p>
+                            </div>
+                            <div class="post__buttons">
+                                <a href = "https://bund322.github.io/nft_marketplace_mintify/" target="_blank"><b>Посмотрите!</b></a>
+                                <a href = "https://github.com/Bund322/nft_marketplace_mintify" target="_blank">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="post complited-works">
+                            <div class="post__header">
+                                <img src="./img/projects/post.png" alt="">
+                            </div>
+                            <div class="post__discription">
+                                <h2>myPetz</h2>
+                                <p>A social media for your pets.</p>
+                            </div>
+                            <div class="post__buttons">
+                                <a href = "#"><b>Посмотрите!</b></a>
+                                <a href = "#">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="post current-works">
+                            <div class="post__header">
+                                <img src="./img/projects/post.png" alt="">
+                            </div>
+                            <div class="post__discription">
+                                <h2>myPetz</h2>
+                                <p>A social media for your pets.</p>
+                            </div>
+                            <div class="post__buttons">
+                                <a href = "#"><b>Посмотрите!</b></a>
+                                <a href = "#">GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div class="post current-works">
+                            <div class="post__header">
+                                <img src="./img/projects/post.png" alt="">
+                            </div>
+                            <div class="post__discription">
+                                <h2>myPetz</h2>
+                                <p>A social media for your pets.</p>
+                            </div>
+                            <div class="post__buttons">
+                                <a href = "#"><b>Посмотрите!</b></a>
+                                <a href = "#">GitHub Repo</a>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
             </section>
-            <section class = "projects container" id = "projects">
-                <div class="projects-content">
-                    <div class = "projects-text">
-                        <h1>мои проекты</h1>
-                        <p>Коллекция моих последних работ.</p>
-                    </div>
-                    <div class="projects-list">
-                        <div class = "toggles">
-                            <button id = "show-all">показать все</button>
-                            <button id = "current-works">текущие</button>
-                            <button id = "complited-works">завершенные</button>
-                        </div>
-                        <div class="posts">
-                            <div class="post current-works">
-                                <img src = "./img/projects/post.png" alt = "current">
-                                <h3>myPetz</h3>
-                                <p>A social media for your pets.</p>
-                                <ul class = "post-button2">
-                                    <li><a href = "#"><b>Посмотрите!</b></a></li>
-                                    <li><a href = "#">Github Repo</a></li>
-                                </ul>
-                            </div>
-                            <div class="post current-works">
-                                <img src = "./img/projects/post.png" alt = "current">
-                                <h3>myPetz</h3>
-                                <p>A social media for your pets.</p>
-                                <ul class = "post-button2">
-                                    <li><a href = "#"><b>Посмотрите!</b></a></li>
-                                    <li><a href = "#">Github Repo</a></li>
-                                </ul>
-                            </div>
-                            <div class="post complited-works">
-                                <img src = "./img/projects/post.png" alt = "complited">
-                                <h3>myPetz</h3>
-                                <p>A social media for your pets.</p>
-                                <ul class = "post-button2">
-                                    <li><a href = "#"><b>Посмотрите!</b></a></li>
-                                    <li><a href = "#">Github Repo</a></li>
-                                </ul>
-                            </div>
-                            <div class="post current-works">
-                                <img src = "./img/projects/post.png" alt = "current">
-                                <h3>myPetz</h3>
-                                <p>A social media for your pets.</p>
-                                <ul class = "post-button2">
-                                    <li><a href = "#"><b>Посмотрите!</b></a></li>
-                                    <li><a href = "#">Github Repo</a></li>
-                                </ul>
-                            </div>
-                            <div class="post complited-works">
-                                <img src = "./img/projects/post.png" alt = "complited">
-                                <h3>myPetz</h3>
-                                <p>A social media for your pets.</p>
-                                <ul class = "post-button2">
-                                    <li><a href = "#"><b>Посмотрите!</b></a></li>
-                                    <li><a href = "#">Github Repo</a></li>
-                                </ul>
-                            </div>
-                            <div class="post current-works">
-                                <img src = "./img/projects/post.png" alt = "current">
-                                <h3>myPetz</h3>
-                                <p>A social media for your pets.</p>
-                                <ul class = "post-button2">
-                                    <li><a href = "#"><b>Посмотрите!</b></a></li>
-                                    <li><a href = "#">Github Repo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <section class="about section" id = "about">
+                <div class="section__header ">
+                    <h1>ОБО МНЕ</h1>
+                    <p>Маленькие факты о себе.</p>
                 </div>
-            </section>
-            <section class = "about container" id = "about">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h1>обо мне</h1>
-                        <span>Маленькие факты о себе.</span><br><br>
-                        <p>
-                            Здравствуйте. Меня зовут Александр Когут. Я получил 
-                            степень бакалавра в области информационных систем и 
-                            технологий в балтийском государственном университете 
-                            "ВОЕНМЕХ" имени Д.Ф. Устинова. Прошел военную службу 
-                            по призыву в научной роте Главного Военно-медицинского 
-                            управления МО РФ на базе Военно-медицинской академии 
-                            имени С.М. Кирова. Проработал 2 года на должности техника
-                            в БГТУ "ВОЕНМЕХ". <br><br>Меня всегда интересовало как все устроено, 
-                            как было сделано все, что я видел в Интернете, по 
-                            телевизору и в публикациях. С появлением новых технологий 
-                            мой интерес к миру Интернета возрос со временем.
-                            <br><br>В настоящее время я ищу карьерный переход. После того, как 
-                            я получил диплом по разработке программного обеспечения, 
-                            я решил продолжить свою профессиональную карьеру в качестве 
-                            веб-разработчика.
-                        </p>
-                        <div class="about-img__mini body-img__big"></div>
-                        <h5>Инструменты и технологии, которые я использую</h5>
+                <div class="about__container">
+                    <div class="about__left">
+                        <p>Здравствуйте. Меня зовут Александр Когут. Я получил 
+                            степень бакалавра в области информационных систем 
+                            и технологий в балтийском государственном 
+                            университете "ВОЕНМЕХ" имени Д.Ф. Устинова. 
+                            Прошел военную службу по призыву в научной роте 
+                            Главного Военно-медицинского управления МО РФ на 
+                            базе Военно-медицинской академии имени С.М. Кирова. 
+                            Проработал 2 года на должности техника в БГТУ 
+                            "ВОЕНМЕХ".
+                            <br>
+                            <br>
+                            Меня всегда интересовало как все устроено, как было 
+                            сделано все, что я видел в Интернете, по телевизору 
+                            и в публикациях. С появлением новых технологий мой 
+                            интерес к миру Интернета возрос со временем.
+                            <br>
+                            <br>
+                            В настоящее время я ищу карьерный переход. После 
+                            того, как я получил диплом по разработке программного 
+                            обеспечения, я решил продолжить свою профессиональную 
+                            карьеру в качестве веб-разработчика.</p>
+
+                        <h2>Инструменты и технологии, которые я использую</h2>
                         <table border = "0" width = "80%" cellpadding = "0">
                             <tr>
                                 <td>HTML</td>
@@ -156,47 +174,58 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="about-img body-img__big">
+                    <div class="about__right">
+                        <img src="./img/about/myphoto.png" alt="">
                     </div>
                 </div>
             </section>
-            <section class = "contact container" id = "contact">
-                <div class="contact-content">
-                    <div class="content-text">
-                        <h1>контакт</h1>
-                        <p>Если вы хотите мне что-то сказать, не стесняйтесь обращаться ко мне через форму ниже.</p>
-                        <form class = "content-input" name = "contacts">
-                            <div class = "input-text">
-                                <p>Имя<br>
-                                    <input type = "text" size = "40">
-                                </p>
-                                <p>Email<br>
-                                    <input type = "text" size = "40">
-                                </p>
-                                <p>Тема<br>
-                                    <input type = "text" size = "40">
-                                </p>
-                                <p>Сообщение<br>
-                                    <textarea name="comment"></textarea>
-                                </p>
-                            </div>
-                            <div class="input-button">
-                                <input type="submit" value="Отправить сообщение">
-                            </div>
+            <section class="contact section" id = "contact">
+                <div class="section__header ">
+                    <h1>КОНТАКТ</h1>
+                    <p>Если вы хотите мне что-то сказать, 
+                        не стесняйтесь обращаться ко мне через форму ниже.</p>
+                </div>
+                <div class="contact__container">
+                    <div class="contact__left">
+                        <form action="" class="contact__form">
+                            <p>
+                                Имя
+                                <br>
+                                <input type="text" class="input name">
+                            </p>
+                            <p>
+                                Email
+                                <br>
+                                <input type="text" class="input email">
+                            </p>
+                            <p>
+                                Тема
+                                <br>
+                                <input type="text" class="input name">
+                            </p>
+                            <p>
+                                Сообщение
+                                <br>
+                                <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                            </p>
+                            <input type="submit" value = "Отправить сообщение" class="contact__button">
                         </form>
                     </div>
-                    <div class="contact-img body-img">
+                    <div class="contact__right">
+                        <img src="./img/contact/contact-logo.png" alt="">
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-content">
-                <p>Разработан с любовью <b>Александром Когутом.</b></p> 
-                <div>
-                    <a href = "mailto:gus0aleksandr@yandex.ru" target="_blank"><div class = "body-img email-logo__reverse"></div></a>
-                    <a href = "https://github.com/Bund322" target="_blank"><div class = "body-img github-logo__reverse"></div></a>
-                    <a href = "https://vk.com/id699032047" target="_blank"><div class = "body-img vk-logo__reverse"></div></a>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__text">
+                    <h3>Разработан с любовью <b>Александром Когутом.</b> </h3>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./img/icons/mail-logo-dark.svg" alt=""></a>
+                    <a href="#"><img src="./img/icons/github-logo-dark.svg" alt=""></a>
+                    <a href="#"><img src="./img/icons/vk-logo-dark.svg" alt=""></a>
                 </div>
             </div>
         </footer>
@@ -204,8 +233,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./scripts/themes.js"></script>
-    <script type="text/javascript" src="./scripts/script.js"></script>
-    
+    <script src = "./script/script.js"></script>
 </body>
 </html>

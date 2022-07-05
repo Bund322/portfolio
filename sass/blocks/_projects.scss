@@ -1,0 +1,46 @@
+
+.toggles {
+    + * {
+        margin-top: 80px;
+        @media screen and (max-width: 910px){
+            margin-top: 10px;
+        }
+    }
+    
+}
+.toggles__button {
+    border: 0;
+    background-color: none;
+
+    padding: 0;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    + * {
+        margin-left: 20px;
+        
+    }
+    &:hover {
+        color: lighten(#080808, 40%)
+    }
+    @media screen and (max-width: 910px){
+        + * {
+            margin-left: 5px;
+        }
+        font-size: 15px;
+    }
+   
+}
+.posts {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    @media screen and (max-width: 910px){
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}

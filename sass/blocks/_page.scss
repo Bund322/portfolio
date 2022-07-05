@@ -1,0 +1,42 @@
+.page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #E5E5E5;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 28px 155px;
+    background-color: #EFEFEF;
+    transition: padding 0.5s ease-in;
+    
+    + * {
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 1200px){
+        padding: 28px 28px;
+    }
+    @media screen and (max-width: 910px){
+        padding: 0;
+    }
+}
+.main {
+    + * {
+        margin-top: 40px;
+    }
+}
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 92px 162px;
+    background-color: #1D1D1E;
+    @media screen and (max-width: 1200px){
+        padding: 28px 28px;
+    }
+    @media screen and (max-width: 910px){
+        padding: 0;
+    }
+}

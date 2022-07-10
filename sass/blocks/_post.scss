@@ -13,13 +13,13 @@
         font-weight: 800;
         font-size: 24px;
 
-        color: #000000;
+        color: var(--color-text);
     }
     p {
         font-weight: 400;
         font-size: 15px;
 
-        color: #000000;
+        color: var(--color-text);
     }
     + * {
         margin-top: 14px;
@@ -39,13 +39,13 @@
         
         padding: 8px 0;
 
-        color: black;
-        border: 2px solid #000000;
+        color: var(--color-text);
+        border: 2px solid var(--color-text);
 
         transition: color 0.2s ease-in, border 0.2s ease-in;
         &:hover {
-            color: lighten(#090909, 30%);
-            border: 2px solid lighten(#090909, 30%);
+            color: lighten(#060606, 30%);
+            border: 2px solid lighten(#060606, 30%);
         }
 
         @media screen and (max-width: 910px){

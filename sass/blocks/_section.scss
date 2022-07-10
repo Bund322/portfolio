@@ -1,5 +1,5 @@
 .section {
-    background-color: #EFEFEF;
+    background-color: var(--color-bg);
     padding: 62px 162px;
 
     + * {
@@ -19,13 +19,13 @@
         font-weight: 800;
         font-size: 85px;
 
-        color: #000000;
+        color: var(--color-text);
     }
     p {
         font-weight: 400;
         font-size: 31px;
 
-        color: #000000;
+        color: var(--color-text);
     }
     + * {
         margin-top: 54px;

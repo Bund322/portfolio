@@ -4,13 +4,13 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #E5E5E5;
+    background-color: var(--color-page);
 }
 .header {
     display: flex;
     align-items: center;
     padding: 28px 155px;
-    background-color: #EFEFEF;
+    background-color: var(--color-bg);
     transition: padding 0.5s ease-in;
     
     + * {
@@ -32,11 +32,26 @@
     display: flex;
     align-items: center;
     padding: 92px 162px;
-    background-color: #1D1D1E;
+    background-color: var(--color-footer);
     @media screen and (max-width: 1200px){
         padding: 28px 28px;
     }
     @media screen and (max-width: 910px){
         padding: 0;
     }
+}
+
+.svg_fill {
+    fill: var(--color-text);
+}
+#change__theme {
+    circle {
+        fill: var(--color-bg-change-theme);
+    }
+    path {
+        fill: var(--color-btn-change-theme);
+    }
+}
+.svg_dark {
+    fill: var(--color-text-dark);
 }

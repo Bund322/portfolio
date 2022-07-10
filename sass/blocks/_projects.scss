@@ -10,7 +10,7 @@
 }
 .toggles__button {
     border: 0;
-    background-color: none;
+    background: none;
 
     padding: 0;
 
@@ -22,7 +22,7 @@
         
     }
     &:hover {
-        color: lighten(#080808, 40%)
+        color: lighten(#060606, 40%)
     }
     @media screen and (max-width: 910px){
         + * {

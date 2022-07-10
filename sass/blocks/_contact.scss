@@ -16,23 +16,23 @@
         font-weight: 700;
         font-size: 24px;
 
-        color: #000000;
+        color: var(--color-text);
         + * {
             margin-top: 23px;
         }
     }
     textarea {
         width: 100%;
-        border: 1px solid #000000;
+        border: 1px solid var(--color-text);
 
         font-size: 18px;
 
         transition: border 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease-in;
         &:hover {
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 15px var(--color-box-shadow);
         }
         &:focus {
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 15px var(--color-box-shadow);
         }
     }
     @media screen and (max-width: 910px){
@@ -60,20 +60,21 @@
     width: 303px;
     height: 52px;
 
-    border: 1px solid #000000;
+    border: 1px solid var(--color-text);
     cursor: pointer;
 
     font-weight: 700;
     font-size: 20px;
     line-height: 35px;
 
-    color: #000000;
+    color: var(--color-text);
+    background: none;
 
     transition: color 0.2s ease-in, border 0.2s ease-in;
 
     &:hover {
-        color: lighten(#090909, 40);
-        border: 1px solid lighten(#090909, 40);
+        color: lighten(#060606, 40);
+        border: 1px solid lighten(#060606, 40);
     }
 
     @media screen and (max-width: 910px){

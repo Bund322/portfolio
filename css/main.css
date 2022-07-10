@@ -1,3 +1,25 @@
+html.light {
+  --color-text: #060606;
+  --color-bg: #EFEFEF;
+  --color-footer: #1D1D1E;
+  --color-page: #E5E5E5;
+  --color-btn-change-theme: #E6E6E6;
+  --color-bg-change-theme: #191919;
+  --color-text-dark: #EFEFEF;
+  --color-box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+html.dark {
+  --color-text: #EFEFEF;
+  --color-bg: #1D1D1E;
+  --color-footer: #EFEFEF;
+  --color-page: #E5E5E5;
+  --color-btn-change-theme: #191919;
+  --color-bg-change-theme: #E6E6E6;
+  --color-text-dark: #060606;
+  --color-box-shadow: rgba(255, 255, 255, 0.332);
+}
+
 * {
   margin: 0;
   outline: none;
@@ -23,14 +45,14 @@ input {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #E5E5E5;
+  background-color: var(--color-page);
 }
 
 .header {
   display: flex;
   align-items: center;
   padding: 28px 155px;
-  background-color: #EFEFEF;
+  background-color: var(--color-bg);
   transition: padding 0.5s ease-in;
 }
 .header + * {
@@ -55,7 +77,7 @@ input {
   display: flex;
   align-items: center;
   padding: 92px 162px;
-  background-color: #1D1D1E;
+  background-color: var(--color-footer);
 }
 @media screen and (max-width: 1200px) {
   .footer {
@@ -68,12 +90,27 @@ input {
   }
 }
 
+.svg_fill {
+  fill: var(--color-text);
+}
+
+#change__theme circle {
+  fill: var(--color-bg-change-theme);
+}
+#change__theme path {
+  fill: var(--color-btn-change-theme);
+}
+
+.svg_dark {
+  fill: var(--color-text-dark);
+}
+
 .button {
-  border: 2px solid #000000;
+  border: 2px solid var(--color-text);
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
-  color: #000000;
+  color: var(--color-text);
   background-color: none;
   cursor: pointer;
   transition: color 0.2s ease-in, background-color 0.2s ease-in;
@@ -120,7 +157,7 @@ input {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: var(--color-text);
   transition: color 0.2s ease-in;
 }
 .nav a + * {
@@ -151,11 +188,15 @@ input {
 .change-theme {
   cursor: pointer;
 }
+.change-theme:active {
+  position: relative;
+  top: 1px;
+}
 
 .home {
   display: flex;
   justify-content: space-between;
-  background-color: #EFEFEF;
+  background-color: var(--color-bg);
   padding: 100px 162px;
   transition: padding 0.6s ease-in;
 }
@@ -178,13 +219,13 @@ input {
   font-style: light;
   font-weight: 300;
   font-size: 24px;
-  color: #000000;
+  color: var(--color-text);
 }
 .home__text h1 {
   font-weight: 900;
   font-size: 55px;
   line-height: 127%;
-  color: #000000;
+  color: var(--color-text);
 }
 .home__text + * {
   margin-top: 65px;
@@ -234,7 +275,7 @@ input {
 }
 
 .section {
-  background-color: #EFEFEF;
+  background-color: var(--color-bg);
   padding: 62px 162px;
 }
 .section + * {
@@ -255,12 +296,12 @@ input {
 .section__header h1 {
   font-weight: 800;
   font-size: 85px;
-  color: #000000;
+  color: var(--color-text);
 }
 .section__header p {
   font-weight: 400;
   font-size: 31px;
-  color: #000000;
+  color: var(--color-text);
 }
 .section__header + * {
   margin-top: 54px;
@@ -292,7 +333,7 @@ input {
 
 .toggles__button {
   border: 0;
-  background-color: none;
+  background: none;
   padding: 0;
   font-size: 20px;
   cursor: pointer;
@@ -301,7 +342,7 @@ input {
   margin-left: 20px;
 }
 .toggles__button:hover {
-  color: #6e6e6e;
+  color: #6c6c6c;
 }
 @media screen and (max-width: 910px) {
   .toggles__button {
@@ -341,12 +382,12 @@ input {
 .post__discription h2 {
   font-weight: 800;
   font-size: 24px;
-  color: #000000;
+  color: var(--color-text);
 }
 .post__discription p {
   font-weight: 400;
   font-size: 15px;
-  color: #000000;
+  color: var(--color-text);
 }
 .post__discription + * {
   margin-top: 14px;
@@ -362,13 +403,13 @@ input {
   text-decoration: none;
   font-size: 24px;
   padding: 8px 0;
-  color: black;
-  border: 2px solid #000000;
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
   transition: color 0.2s ease-in, border 0.2s ease-in;
 }
 .post__buttons a:hover {
-  color: #565656;
-  border: 2px solid #565656;
+  color: #535353;
+  border: 2px solid #535353;
 }
 @media screen and (max-width: 910px) {
   .post__buttons a {
@@ -394,12 +435,13 @@ input {
 .about__left {
   display: flex;
   flex-direction: column;
+  color: var(--color-text);
   max-width: 788px;
   width: 100%;
 }
 .about__left p {
   font-size: 24px;
-  color: #000000;
+  color: var(--color-text);
 }
 .about__left p + * {
   margin-top: 50px;
@@ -421,7 +463,7 @@ input {
   }
   .about__left p {
     font-size: 16px;
-    color: #000000;
+    color: var(--color-text);
   }
   .about__left p + * {
     margin-top: 50px;
@@ -465,22 +507,22 @@ input {
 .contact__form p {
   font-weight: 700;
   font-size: 24px;
-  color: #000000;
+  color: var(--color-text);
 }
 .contact__form p + * {
   margin-top: 23px;
 }
 .contact__form textarea {
   width: 100%;
-  border: 1px solid #000000;
+  border: 1px solid var(--color-text);
   font-size: 18px;
   transition: border 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 .contact__form textarea:hover {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px var(--color-box-shadow);
 }
 .contact__form textarea:focus {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px var(--color-box-shadow);
 }
 @media screen and (max-width: 910px) {
   .contact__form {
@@ -509,17 +551,18 @@ input {
   float: right;
   width: 303px;
   height: 52px;
-  border: 1px solid #000000;
+  border: 1px solid var(--color-text);
   cursor: pointer;
   font-weight: 700;
   font-size: 20px;
   line-height: 35px;
-  color: #000000;
+  color: var(--color-text);
+  background: none;
   transition: color 0.2s ease-in, border 0.2s ease-in;
 }
 .contact__button:hover {
-  color: #6f6f6f;
-  border: 1px solid #6f6f6f;
+  color: #6c6c6c;
+  border: 1px solid #6c6c6c;
 }
 @media screen and (max-width: 910px) {
   .contact__button {
@@ -531,15 +574,15 @@ input {
 .input {
   width: 100%;
   height: 48px;
-  border: 1px solid #000000;
+  border: 1px solid var(--color-text);
   font-size: 18px;
   transition: border 0.2s ease-in, background-color 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 .input:hover {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px var(--color-box-shadow);
 }
 .input:focus {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px var(--color-box-shadow);
 }
 
 .footer__container {
@@ -561,7 +604,7 @@ input {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  color: #EFEFEF;
+  color: var(--color-bg);
 }
 @media screen and (max-width: 910px) {
   .footer__text h3 {

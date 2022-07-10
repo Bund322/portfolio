@@ -1,0 +1,20 @@
+html.light {
+    --color-text: #060606;
+    --color-bg: #EFEFEF;
+    --color-footer: #1D1D1E;
+    --color-page: #E5E5E5;
+    --color-btn-change-theme: #E6E6E6;
+    --color-bg-change-theme: #191919;
+    --color-text-dark: #EFEFEF;
+    --color-box-shadow: rgba(0, 0, 0, 0.15);
+}
+html.dark {
+    --color-text: #EFEFEF;
+    --color-bg: #1D1D1E;
+    --color-footer: #EFEFEF;
+    --color-page: #E5E5E5;
+    --color-btn-change-theme: #191919;
+    --color-bg-change-theme: #E6E6E6;
+    --color-text-dark: #060606;
+    --color-box-shadow: rgba(255, 255, 255, 0.332);
+}

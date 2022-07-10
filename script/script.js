@@ -10,3 +10,25 @@ $(function() {
         $('.post').show(500);
     });
 });
+
+let contactLogo = document.querySelector('.contact__right_fill');
+
+let logoImg = document.querySelector('.logo__img');
+
+console.log(contactLogo); 
+$('.change-theme').click(() => {
+    const theme = document.documentElement;
+    if(theme.classList.contains('light')) {
+        theme.classList.remove('dark', 'light');
+        theme.classList.add('dark');
+        contactLogo.setAttribute("src","./img/contact/contact-logo-dark.png");
+        logoImg.setAttribute("src","./img/header/logo-dark.svg");
+    }
+    else {
+        theme.classList.remove('dark', 'light');
+        theme.classList.add('light');
+        contactLogo.setAttribute("src","./img/contact/contact-logo.png");
+        logoImg.setAttribute("src","./img/header/logo.svg");
+    }
+    
+});

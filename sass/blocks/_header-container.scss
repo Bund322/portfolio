@@ -34,7 +34,7 @@
         font-size: 16px;
         line-height: 24px;
 
-        color: #000000;
+        color: var(--color-text);
 
         transition: color 0.2s ease-in;
     }
@@ -63,4 +63,8 @@
 }
 .change-theme {
     cursor: pointer;
+    &:active {
+        position: relative;
+        top: 1px;
+    }
 }

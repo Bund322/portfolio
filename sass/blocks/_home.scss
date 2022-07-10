@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
 
-    background-color: #EFEFEF;
+    background-color: var(--color-bg);
     padding: 100px 162px;
 
     transition: padding 0.6s ease-in;
@@ -26,14 +26,14 @@
         font-weight: 300;
         font-size: 24px;
 
-        color: #000000;
+        color: var(--color-text);
     }
     h1 {
         font-weight: 900;
         font-size: 55px;
         line-height: 127%;
 
-        color: #000000;
+        color: var(--color-text);
     }
     + * {
         margin-top: 65px;
